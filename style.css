@@ -1,0 +1,97 @@
+body {
+    background: rgb(206, 153, 203);
+  }
+  /* every box is this size */
+  
+  .skyblue {
+    background: rgb(200, 255, 0);
+  }
+  
+  .box{
+    padding: 10px;
+    background: white;
+    margin-top:50px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:20px;
+    align-content: center;
+  }
+  
+  
+  /* Giving our navbar some padding and a background color */
+  .navbar {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 25px;
+    background: #5D6D7E;
+  }
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar li {
+    display: d-block;
+    padding: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  
+  
+  p{
+      font-size: 20px;
+  }
+  
+  
+  .c-d{color:white;
+    font-size: 25px;
+  }
+  
+  .latitude {
+    color: white;
+    font-family: verdana;
+    font-size: 40px;
+    background-color: rgb(44, 166, 40);
+    border: 1px solid rgb(44, 166, 40);
+      padding: 15px;
+  }
+  /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+  @media (max-width: 480px) {
+    .navbar li {
+      padding: 10px;
+    }
+    .box {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .navbar ul {
+      visibility: hidden;
+    }
+    #nav-select {
+      visibility: visible;
+    }
+  }
+  
+  .col-1 {width: 8%;}
+  .col-2 {width: 17%;}
+  .col-3 {width: 24%;}
+  .col-4 {width: 32%;}
+  .col-5 {width: 40%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 60%;}
+  .col-8 {width: 65%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 82%;}
+  .col-11 {width: 92%;}
+  .col-12 {width: 100%;}
+  
+  @media only screen and (max-width: 768px) {
+      /* mobile phone fitting: */
+      [class*="col-"] {
+          width: 100%;
+      }
+  }
